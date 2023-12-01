@@ -21,7 +21,7 @@ main {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 20px;
 }
 
@@ -31,6 +31,13 @@ main {
 
 .none {
     display: none;
+}
+
+.none-social {
+    display: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 3px;
 }
 
 a {
@@ -192,6 +199,12 @@ li {
     color: red;
 }
 
+/* Banner */
+
+.ads {
+    display: none;
+}
+
 /* Presentation Section */
 
 h3 {
@@ -254,6 +267,13 @@ footer ul {
     color: white;
 }
 
+.enterprice-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 767px) {
@@ -293,8 +313,176 @@ footer ul {
         height: 450px;
     }
 
-    /* Kcal & Meal Type Section */
+    /* Difficult Section */
+
+    .fa-ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0;
+        justify-content: left;
+    }
+
+    .fa-ul li {
+        width: 30%;
+    }
+
+    /* Social Section */
+
+    .social-button {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-button a {
+        padding: 15px 50px;
+        background-color: white;
+        border-radius: 35%;
+        margin: 15px;
+    }
+
+    /* Banner */
+
+    .ads {
+        display: block;
+        margin: 20px;
+    }
+
+    /* Presentation Section */
+
+    .presentation {
+        display: inline-block;
+    }
+
+    .image-tiramisu {
+        float: left;
+        margin-right: 10px;
+    }
+
+    /* Footer */
+
+    .li-footer {
+        width: calc(100% / 5 - 40px);
+        white-space: nowrap;
+    }
+
+    footer ul {
+        gap: 40px;
+    }
+}
+
+/* Responsive 992px */
+
+@media screen and (min-width: 991px) {
+    h1 {
+        font-size: 76px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .topic {
+        font-size: 20px;
+    }
 
 
+    button,
+    .rate-section {
+        font-size: 20px;
+    }
 
+    /* Video Section */
+
+    .container-receipt {
+        display: flex;
+    }
+
+
+    iframe {
+        width: 70%;
+        height: 500px;
+    }
+
+    .info-receipt {
+        width: 30%;
+        height: 500px;
+    }
+
+
+    .difficult-section ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-ul li {
+        width: 100%;
+    }
+
+    .none-social {
+        display: inline-block;
+    }
+
+    .social-button a {
+        padding: 15px 30px;
+        background-color: white;
+        border-radius: 35%;
+        margin: 15px;
+    }
+
+    .image-tiramisu {
+        width: 350px;
+        height: 200px;
+    }
+
+    /* Footer */
+
+    footer {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .enterprice-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+    }
+
+    .enterprice-info p {
+        text-align: left;
+    }
+
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .li-footer a {
+        color: white;
+    }
+
+    .li-footer {
+        width: calc(100% / 5 - 40px);
+        white-space: nowrap;
+    }
+
+    footer ul {
+        gap: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1221px) {
+    .container {
+        margin: 0 auto;
+    }
 }
