@@ -20,6 +20,27 @@ main {
     font-weight: bold;
 }
 
+.container {
+    max-width: 1920px;
+    margin: 0 20px;
+}
+
+.container-receipt {
+    background-color: white;
+}
+
+.none {
+    display: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
 
 /* Header */
 
@@ -61,10 +82,11 @@ button {
 
 .topic,
 .title-section {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .topic {
+    padding-bottom: 0;
     font-size: 10px;
     color: gray;
 }
@@ -72,7 +94,207 @@ button {
 /* Video Section */
 
 iframe {
-    width: 410px;
-    height: 230px;
-    margin: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+/* Kcal & Meal Type Section */
+
+.kcal-container,
+.vegetarian-container {
+    background-color: rgb(246, 245, 243);
+    margin: 0 20px;
+    padding: 20px 10px;
+}
+
+.kcal-container {
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.kcal {
+    background-color: rgb(78, 57, 105);
+    border-radius: 2px;
+    color: white;
+    padding: 4px 7px;
+    font-size: 12px;
+}
+
+.info {
+    color: rgb(255, 150, 20);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.vegetarian {
+    font-size: 12px;
+}
+
+.fa-carrot {
+    padding-right: 2px;
+}
+
+/* Diffuclt and Time Section */
+
+.difficult-section {
+    padding: 0;
+    margin: 0 20px;
+}
+
+ul {
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.fa-li {
+    color: rgb(255, 150, 20);
+}
+
+.pa-bottom {
+    padding-bottom: 30px;
+}
+
+/* Social Button */
+
+.social-button {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-button a {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 40%;
+    margin: 15px;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-twitter {
+    color: rgb(102, 188, 217);
+}
+
+.fa-instagram {
+    color: rgb(204, 143, 153);
+}
+
+.fa-pinterest,
+.fa-youtube {
+    color: red;
+}
+
+/* Presentation Section */
+
+h3 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border-bottom {
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(255, 150, 20);
+}
+
+.image-tiramisu {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.story {
+    line-height: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(78, 57, 105);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+footer p {
+    padding: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-footer {
+    width: calc(100% / 4 - 15px);
+}
+
+.li-footer a {
+    color: white;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 767px) {
+    h1 {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 66px;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .none {
+        display: inline-block;
+    }
+
+    .title-section,
+    .topic {
+        padding: 30px 0 5px 0;
+    }
+
+    .topic {
+        font-size: 15px;
+    }
+
+
+    button,
+    .rate-section {
+        font-size: 20px;
+    }
+
+    /* Video Section */
+
+    iframe {
+        height: 450px;
+    }
+
+    /* Kcal & Meal Type Section */
+
+
+
 }
