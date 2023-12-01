@@ -1,0 +1,78 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+main {
+    background-color: rgb(246, 245, 243);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Header */
+
+h1 {
+    font-family: 'Nerko One', cursive;
+    color: rgb(255, 150, 20);
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Title and Rate Section */
+
+.title-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star {
+    color: rgb(255, 150, 20);
+}
+
+h2 {
+    color: rgb(78, 57, 105);
+    font-size: 20px;
+}
+
+.rate-section {
+    font-size: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(255, 150, 20);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    font-size: 10px;
+}
+
+.topic,
+.title-section {
+    padding: 10px;
+}
+
+.topic {
+    font-size: 10px;
+    color: gray;
+}
+
+/* Video Section */
+
+iframe {
+    width: 410px;
+    height: 230px;
+    margin: 10px;
+}
