@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+
+/* Root */
+
+:root {
+    --gray: rgb(246, 245, 243);
+    --orange: rgb(255, 150, 20);
+    --purple: rgb(78, 57, 105);
+}
+
 /* Generics */
 
 body {
@@ -13,7 +22,7 @@ body {
 }
 
 main {
-    background-color: rgb(246, 245, 243);
+    background-color: var(--gray);
 }
 
 .bold {
@@ -29,12 +38,12 @@ main {
     background-color: white;
 }
 
-.none {
+.none,
+.none-social {
     display: none;
 }
 
 .none-social {
-    display: none;
     color: black;
     font-weight: bold;
     padding-left: 3px;
@@ -53,7 +62,7 @@ img {
 
 h1 {
     font-family: 'Nerko One', cursive;
-    color: rgb(255, 150, 20);
+    color: var(--orange);
     font-size: 48px;
     text-align: center;
 }
@@ -65,12 +74,13 @@ h1 {
     justify-content: space-between;
 }
 
-.fa-star {
-    color: rgb(255, 150, 20);
+.fa-star,
+.fa-li {
+    color: var(--orange);
 }
 
 h2 {
-    color: rgb(78, 57, 105);
+    color: var(--purple);
     font-size: 20px;
 }
 
@@ -80,7 +90,7 @@ h2 {
 
 button {
     padding: 10px;
-    background-color: rgb(255, 150, 20);
+    background-color: var(--orange);
     border-radius: 50px;
     color: white;
     border: none;
@@ -103,13 +113,14 @@ button {
 iframe {
     width: 100%;
     height: 250px;
+    border: none;
 }
 
 /* Kcal & Meal Type Section */
 
 .kcal-container,
 .vegetarian-container {
-    background-color: rgb(246, 245, 243);
+    background-color: var(--gray);
     margin: 0 20px;
     padding: 20px 10px;
 }
@@ -123,19 +134,19 @@ iframe {
 }
 
 .kcal {
-    background-color: rgb(78, 57, 105);
+    background-color: var(--purple);
     border-radius: 2px;
     color: white;
     padding: 4px 7px;
-    font-size: 12px;
 }
 
 .info {
-    color: rgb(255, 150, 20);
+    color: var(--orange);
     font-weight: bold;
     font-size: 15px;
 }
 
+.kcal,
 .vegetarian {
     font-size: 12px;
 }
@@ -158,10 +169,6 @@ ul {
 
 li {
     margin-bottom: 15px;
-}
-
-.fa-li {
-    color: rgb(255, 150, 20);
 }
 
 .pa-bottom {
@@ -199,12 +206,6 @@ li {
     color: red;
 }
 
-/* Banner */
-
-.ads {
-    display: none;
-}
-
 /* Presentation Section */
 
 h3 {
@@ -220,7 +221,7 @@ h3 {
 
 .border-bottom {
     padding-bottom: 10px;
-    border-bottom: 3px solid rgb(255, 150, 20);
+    border-bottom: 3px solid var(--orange);
 }
 
 .image-tiramisu {
@@ -234,13 +235,28 @@ h3 {
 
 /* Footer */
 
-footer {
-    background-color: rgb(78, 57, 105);
-    color: white;
+footer,
+.enterprice-info,
+footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer,
+.enterprice-info {
     flex-direction: column;
+}
+
+footer,
+footer ul,
+.li-footer a {
+    color: white;
+}
+
+
+footer {
+    background-color: var(--purple);
     margin-top: 30px;
 }
 
@@ -250,28 +266,13 @@ footer p {
 }
 
 footer ul {
-    display: flex;
     flex-direction: row;
-    color: white;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
 }
 
 .li-footer {
     width: calc(100% / 4 - 15px);
-}
-
-.li-footer a {
-    color: white;
-}
-
-.enterprice-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Responsive */
@@ -382,13 +383,9 @@ footer ul {
         font-size: 45px;
     }
 
-    .topic {
-        font-size: 20px;
-    }
-
-
     button,
-    .rate-section {
+    .rate-section,
+    .topic {
         font-size: 20px;
     }
 
@@ -398,15 +395,17 @@ footer ul {
         display: flex;
     }
 
+    iframe,
+    .info-receipt {
+        height: 500px;
+    }
 
     iframe {
         width: 70%;
-        height: 500px;
     }
 
     .info-receipt {
         width: 30%;
-        height: 500px;
     }
 
 
@@ -445,29 +444,18 @@ footer ul {
     }
 
     .enterprice-info {
-        display: flex;
-        flex-direction: column;
         justify-content: left;
-        align-items: left;
+        align-items: flex-start;
+        padding-left: 10px;
     }
 
     .enterprice-info p {
         text-align: left;
+        padding: 0 0 5px 0;
     }
-
 
     footer ul {
-        display: flex;
-        flex-direction: row;
-        color: white;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .li-footer a {
-        color: white;
+        padding-top: 5px;
     }
 
     .li-footer {
